@@ -1,5 +1,5 @@
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 img {
@@ -24,3 +24,38 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.title {
+  text-align: center; /* Can move to "body" */
+  margin-bottom: 32px;
+}
+
+.plants {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+  align-items: center; /* Can remove */
+}
+
+.plant-section {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  flex-wrap: wrap;
+  text-align: center;
+  /* max-width: 200px; | Only this needed */
+}
+
+/* My solution review
+
+  1. "text-align: center" can be moved from ".title"
+      to "body". All text on page will be centered,
+      instead of just the title text
+
+  2. "align-items: center" in ".plants" can be removed.
+
+  3. All attributes can be removed from ".plant-section". 
+      Only need "max-width: 200px" to keep the individual
+      flex item at most 200px wide.
+
+*/
