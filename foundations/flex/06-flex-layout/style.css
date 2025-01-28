@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
@@ -24,3 +24,65 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #eeeeee;
+  margin-top: auto;
+}
+
+.content {
+  text-align: center;
+  margin: auto;
+}
+
+.content div {
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Dont need this */
+}
+
+ul li {
+  display: inline-block;
+  color: grey;
+  padding: 0px 5px;
+}
+
+ul a {
+  color: grey;
+  text-decoration: none;
+}
+
+/* My solution review
+
+  1. ".content" can set to flex:column instead to position its
+      items with gaps
+
+  2. "ul" can be set to display:flex instead, instead of changing
+      the "ul li" to inline-block
+
+  3. list-style-type not necessary since "text-decoration: none" is
+      there.
+
+*/
